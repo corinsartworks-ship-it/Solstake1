@@ -10,7 +10,7 @@ const TelegramIcon = ({ className = "w-5 h-5" }: { className?: string }) => (
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="border-t border-white/10 py-16 px-6 relative overflow-hidden bg-black/40 backdrop-blur-md">
+    <footer className="border-t border-white/10 py-16 px-6 relative overflow-hidden bg-gradient-to-t from-black/60 to-transparent backdrop-blur-sm">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
           {/* Telegram Support Section - Now on Top/Left */}

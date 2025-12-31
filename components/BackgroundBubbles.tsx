@@ -13,7 +13,7 @@ const BackgroundBubbles: React.FC = () => {
   }, []);
 
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0 bg-[#030303]">
+    <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
       {/* Star Glitters */}
       {glitters.map((glitter) => (
         <div

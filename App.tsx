@@ -75,27 +75,27 @@ const App: React.FC = () => {
   }, [initObserver]);
 
   return (
-    <div className="relative min-h-screen selection:bg-teal-500/30">
+    <div className="relative min-h-screen w-full overflow-x-hidden selection:bg-teal-500/30">
       <BackgroundBubbles />
 
       <Header />
       
-      <main className="relative z-10">
+      <main className="relative z-10 w-full">
         <Hero />
         
-        <section id="tiers" className="py-32 px-6 max-w-7xl mx-auto">
+        <section id="tiers" className="py-32 px-6 max-w-7xl mx-auto w-full">
           <Tiers />
         </section>
 
-        <section id="features" className="py-32 px-6 max-w-7xl mx-auto">
+        <section id="features" className="py-32 px-6 max-w-7xl mx-auto w-full">
           <Features />
         </section>
 
-        <section id="how-it-works" className="py-32 px-6 max-w-7xl mx-auto">
+        <section id="how-it-works" className="py-32 px-6 max-w-7xl mx-auto w-full">
           <HowItWorks />
         </section>
 
-        <section id="faq" className="py-32 px-6 max-w-4xl mx-auto">
+        <section id="faq" className="py-32 px-6 max-w-4xl mx-auto w-full">
           <FAQ />
         </section>
       </main>

@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
   const p3Text = "With automated instant payout and a simple user experience, Solstake makes staking SOL secure, transparent, and accessible. Start staking today and put your SOL to work.";
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center pt-32 pb-20 overflow-hidden">
+    <div className="relative min-h-[100dvh] flex flex-col items-center justify-center pt-32 pb-20 overflow-hidden w-full">
       {/* Heading Container */}
       <div 
         className={`relative z-10 text-center mb-16 px-6 transition-all duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] 
@@ -51,11 +51,11 @@ export const Hero: React.FC = () => {
       </div>
       
       {/* Subsequent Content */}
-      <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center relative z-10">
-        <div className="space-y-8 mb-16 max-w-4xl flex flex-col items-center">
+      <div className="max-w-7xl mx-auto px-6 flex flex-col items-center text-center relative z-10 w-full">
+        <div className="space-y-8 mb-16 max-w-4xl flex flex-col items-center w-full">
           {/* Paragraph 1 - From Right */}
           <p 
-            className={`text-lg md:text-xl text-gray-400 leading-relaxed font-bold transition-all duration-[1200ms] cubic-bezier(0.16,1,0.3,1) max-w-3xl transform
+            className={`text-lg md:text-xl text-gray-400 leading-relaxed font-bold transition-all duration-[1200ms] cubic-bezier(0.16,1,0.3,1) max-w-3xl transform w-full
               ${step >= 2 ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-[80px]'}`}
           >
             {p1Text}
@@ -63,7 +63,7 @@ export const Hero: React.FC = () => {
 
           {/* Paragraph 2 - From Left */}
           <p 
-            className={`text-lg md:text-xl text-gray-400 leading-relaxed font-bold transition-all duration-[1200ms] cubic-bezier(0.16,1,0.3,1) max-w-3xl transform
+            className={`text-lg md:text-xl text-gray-400 leading-relaxed font-bold transition-all duration-[1200ms] cubic-bezier(0.16,1,0.3,1) max-w-3xl transform w-full
               ${step >= 3 ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-[80px]'}`}
           >
             {p2Text}
@@ -71,7 +71,7 @@ export const Hero: React.FC = () => {
 
           {/* Paragraph 3 - From Bottom */}
           <p 
-            className={`text-lg md:text-xl text-gray-200 leading-relaxed font-bold transition-all duration-[1200ms] cubic-bezier(0.16,1,0.3,1) max-w-3xl transform
+            className={`text-lg md:text-xl text-gray-200 leading-relaxed font-bold transition-all duration-[1200ms] cubic-bezier(0.16,1,0.3,1) max-w-3xl transform w-full
               ${step >= 4 ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[50px]'}`}
           >
             {p3Text}
